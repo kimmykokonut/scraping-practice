@@ -1,7 +1,7 @@
 import time
 from bs4 import BeautifulSoup
 import requests
-# https://www.timesjobs.com/
+# Youtube tutorial scraping: https://www.timesjobs.com/
 
 #get user input
 print('Enter skill you do not have:')

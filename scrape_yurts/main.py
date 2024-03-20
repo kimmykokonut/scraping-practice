@@ -4,9 +4,11 @@ from bs4 import BeautifulSoup
 import requests
 from datetime import date  
 
-# or state parks yurt finder
+# or state parks yurt finder WIP
 
-#user input to make search request?
+# add user input to make search request?
+
+# establish dynamic dates
 td = date.today() # Use the today method and assign it to the td variable.  
 year = td.strftime("%Y")
 month = td.strftime("%m")
@@ -16,6 +18,7 @@ print("Today's date in Python is: ", day, month, year)
 # scrape 1.0
 html_text = requests.get('https://oregonstateparks.reserveamerica.com/unifSearchResults.do').text
 #print(html_text)
+#stuck here due to url not having an html response. working in postman
 
 soup = BeautifulSoup(html_text, 'lxml')
 
